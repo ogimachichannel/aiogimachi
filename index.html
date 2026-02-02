@@ -17,21 +17,37 @@
             min-height: 100vh;
         }
 
+        /* キャラクター画像のスタイル */
+        .character-img {
+            max-width: 200px; /* 画像の横幅（お好みで調整してください） */
+            height: auto;
+            margin-bottom: 10px;
+            /* 浮いているようなふわふわしたアニメーション（任意） */
+            animation: float 3s ease-in-out infinite;
+        }
+
+        @keyframes float {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+            100% { transform: translateY(0px); }
+        }
+
         /* タイトルのスタイル */
         h1 {
             color: #333;
             margin-bottom: 20px;
             font-size: 1.8rem;
+            margin-top: 0;
         }
 
         /* チャットウィンドウを囲むコンテナ */
         .chat-container {
             width: 100%;
-            max-width: 800px; /* PCでの最大幅 */
+            max-width: 800px;
             background-color: #fff;
-            border-radius: 15px; /* 角丸で柔らかい印象に */
+            border-radius: 15px;
             overflow: hidden;
-            box-shadow: 0 10px 25px rgba(0,0,0,0.1); /* 浮いているような影 */
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
         }
 
         /* iframeのスタイル調整 */
@@ -42,6 +58,8 @@
     </style>
 </head>
 <body>
+
+    <img src="正親町立ち透過.jpg" alt="AI_ogimachi キャラクター" class="character-img">
 
     <h1>AI_ogimachi</h1>
 
@@ -54,7 +72,7 @@
         </iframe>
     </div>
 
-    <p style="margin-top: 20px; color: #333; font-size: 0.9rem;">© 2026 AI_ogimachi Project</p>
+    <p style="margin-top: 20px; color: #333; font-size: 0.9rem;">© 2024 AI_ogimachi Project</p>
 
 </body>
 </html>
