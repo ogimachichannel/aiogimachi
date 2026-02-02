@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI_ogimachi</title>
+    <style>
+        /* 全体のレイアウト設定 */
+        body {
+            background-color: #71E8D8;
+            margin: 0;
+            padding: 20px;
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        /* タイトルのスタイル */
+        h1 {
+            color: #333;
+            margin-bottom: 20px;
+            font-size: 1.8rem;
+        }
+
+        /* チャットウィンドウを囲むコンテナ */
+        .chat-container {
+            width: 100%;
+            max-width: 800px; /* PCでの最大幅 */
+            background-color: #fff;
+            border-radius: 15px; /* 角丸で柔らかい印象に */
+            overflow: hidden;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1); /* 浮いているような影 */
+        }
+
+        /* iframeのスタイル調整 */
+        iframe {
+            display: block;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>AI_ogimachi</h1>
+
+    <div class="chat-container">
+        <iframe
+            src="https://udify.app/chatbot/Rdvyxt9bCCMHTH1z"
+            style="width: 100%; height: 700px;"
+            frameborder="0"
+            allow="microphone">
+        </iframe>
+    </div>
+
+    <p style="margin-top: 20px; color: #333; font-size: 0.9rem;">© 2024 AI_ogimachi Project</p>
+
+</body>
+</html>
